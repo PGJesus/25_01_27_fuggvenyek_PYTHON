@@ -12,7 +12,7 @@ szavak = []
 szam = int(input("Hány szót szeretnél megadni? "))
 
 for i in range(szam):
-    szo = input(f"Add meg a(z) {i+1}. szót: ")
+    szo = input(f"{i+1}.")
     szavak.append(szo)
 
 legrovidebb = legrövidebb_szo(szavak)
