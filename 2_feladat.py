@@ -12,9 +12,10 @@ def poz_v_neg(szam):
 folyt = True
 
 while folyt:
-    szam = int(input("Adj meg egy számot: "))
-    poz_v_neg(szam)
-    if szam == "quit":
+    bemenet = input("Adj meg egy számot: ")    
+    if bemenet == "":
         folyt = False
+    else:
+        szam = float(bemenet)
+        poz_v_neg(szam)
 
-poz_v_neg(szam)
